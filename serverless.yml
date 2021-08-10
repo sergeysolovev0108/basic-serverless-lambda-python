@@ -4,7 +4,7 @@ provider:
   name: aws
   runtime: python3.8
   stage: dev
-  region: us-west-1
+  region: us-east-1
 
 plugins:
   - serverless-python-requirements
@@ -14,9 +14,9 @@ package:
 
 functions:
   theLambda:
-    name: test-lambda
-    handler: lambda.handler
-    description: test-lambda
+    name: AWS-lambda-hello-world
+    handler: lambda.lambda_handler
+    description: hello-world
     timeout: 5 # seconds
     memorySize: 128 # mb
     package:
