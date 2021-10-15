@@ -8,7 +8,7 @@ def get_data() -> list:
     AIRTABLE_API_KEY = "keyXL3AhnC8uENRd3"
     AIRTABLE_TABLE_NAME = "MainTable"
     
-    CONST = ${{ secrets.AWS_ACCESS_KEY_ID }}
+    CONST = secrets.AWS_ACCESS_KEY_ID
 
     endpoint = f'https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_NAME}?fields%5B%5D=title&sort%5B0%5D%5Bfield%5D=ID&sort%5B0%5D%5Bdirection%5D=asc'
 
